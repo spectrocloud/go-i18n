@@ -37,9 +37,9 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v2
         with:
-          path: gopath/src/github.com/nicksnyder/go-i18n
+          path: gopath/src/github.com/spectrocloud/go-i18n
       - name: Build and test
-        working-directory: gopath/src/github.com/nicksnyder/go-i18n/v2
+        working-directory: gopath/src/github.com/spectrocloud/go-i18n/v2
         env:
             GOPATH: ${{ github.workspace }}/gopath
         run: |
