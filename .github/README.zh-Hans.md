@@ -1,9 +1,9 @@
-# go-i18n ![Build status](https://github.com/nicksnyder/go-i18n/workflows/Build/badge.svg) [![Report card](https://goreportcard.com/badge/github.com/nicksnyder/go-i18n)](https://goreportcard.com/report/github.com/nicksnyder/go-i18n) [![codecov](https://codecov.io/gh/nicksnyder/go-i18n/branch/master/graph/badge.svg)](https://codecov.io/gh/nicksnyder/go-i18n) [![Sourcegraph](https://sourcegraph.com/github.com/nicksnyder/go-i18n/-/badge.svg)](https://sourcegraph.com/github.com/nicksnyder/go-i18n?badge)
+# go-i18n ![Build status](https://github.com/spectrocloud/go-i18n/workflows/Build/badge.svg) [![Report card](https://goreportcard.com/badge/github.com/spectrocloud/go-i18n)](https://goreportcard.com/report/github.com/spectrocloud/go-i18n) [![codecov](https://codecov.io/gh/nicksnyder/go-i18n/branch/master/graph/badge.svg)](https://codecov.io/gh/nicksnyder/go-i18n) [![Sourcegraph](https://sourcegraph.com/github.com/spectrocloud/go-i18n/-/badge.svg)](https://sourcegraph.com/github.com/spectrocloud/go-i18n?badge)
 
 go-i18n 是一个帮助您将 Go 程序翻译成多种语言的 Go [包](#package-i18n) 和 [命令](#command-goi18n)。
 
 - 支持 [Unicode Common Locale Data Repository (CLDR)](https://www.unicode.org/cldr/charts/28/supplemental/language_plural_rules.html) 中所有 200 多种语言的 [复数字符](http://cldr.unicode.org/index/cldr-spec/plural-rules)。
-  - 代码和测试是从 [CLDR 数据](http://cldr.unicode.org/index/downloads) 中 [自动生成](https://github.com/nicksnyder/go-i18n/tree/main/v2/internal/plural/codegen) 的。
+  - 代码和测试是从 [CLDR 数据](http://cldr.unicode.org/index/downloads) 中 [自动生成](https://github.com/spectrocloud/go-i18n/tree/main/v2/internal/plural/codegen) 的。
 - 使用 [text/template](http://golang.org/pkg/text/template/) 语法支持带有命名变量的字符串。
 - 支持任何格式的消息文件（例如：JSON、TOML、YAML）。
 
@@ -17,12 +17,12 @@ go-i18n 是一个帮助您将 Go 程序翻译成多种语言的 Go [包](#packag
 
 ## Package i18n
 
-[![GoDoc](https://godoc.org/github.com/nicksnyder/go-i18n?status.svg)](https://godoc.org/github.com/nicksnyder/go-i18n/v2/i18n)
+[![GoDoc](https://godoc.org/github.com/spectrocloud/go-i18n?status.svg)](https://godoc.org/github.com/spectrocloud/go-i18n/v2/i18n)
 
 i18n 包支持根据一组语言环境首选项查找消息。
 
 ```go
-import "github.com/nicksnyder/go-i18n/v2/i18n"
+import "github.com/spectrocloud/go-i18n/v2/i18n"
 ```
 
 创建一个 Bundle 以在应用程序的整个生命周期中使用。
@@ -76,12 +76,12 @@ localizer.Localize(&i18n.LocalizeConfig{
 
 ## goi18n 命令
 
-[![GoDoc](https://godoc.org/github.com/nicksnyder/go-i18n?status.svg)](https://godoc.org/github.com/nicksnyder/go-i18n/v2/goi18n)
+[![GoDoc](https://godoc.org/github.com/spectrocloud/go-i18n?status.svg)](https://godoc.org/github.com/spectrocloud/go-i18n/v2/goi18n)
 
 goi18n 命令管理 i18n 包使用的消息文件。
 
 ```
-go get -u github.com/nicksnyder/go-i18n/v2/goi18n
+go get -u github.com/spectrocloud/go-i18n/v2/goi18n
 goi18n -help
 ```
 
@@ -136,9 +136,9 @@ other = "{{.Name}} has {{.Count}} cats."
 
 ## 有关更多信息和示例：
 
-- 阅读 [文档](https://godoc.org/github.com/nicksnyder/go-i18n/v2)。
-- 查看 [代码示例](https://github.com/nicksnyder/go-i18n/blob/main/v2/i18n/example_test.go) 和 [测试](https://github.com/nicksnyder/go-i18n/blob/main/v2/i18n/localizer_test.go)。
-- 查看一个示例 [程序](https://github.com/nicksnyder/go-i18n/tree/main/v2/example)。
+- 阅读 [文档](https://godoc.org/github.com/spectrocloud/go-i18n/v2)。
+- 查看 [代码示例](https://github.com/spectrocloud/go-i18n/blob/main/v2/i18n/example_test.go) 和 [测试](https://github.com/spectrocloud/go-i18n/blob/main/v2/i18n/localizer_test.go)。
+- 查看一个示例 [程序](https://github.com/spectrocloud/go-i18n/tree/main/v2/example)。
 
 ## 许可证
 

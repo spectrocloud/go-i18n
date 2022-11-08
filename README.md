@@ -1,9 +1,9 @@
-# go-i18n ![Build status](https://github.com/nicksnyder/go-i18n/workflows/Build/badge.svg) [![Report card](https://goreportcard.com/badge/github.com/nicksnyder/go-i18n)](https://goreportcard.com/report/github.com/nicksnyder/go-i18n) [![codecov](https://codecov.io/gh/nicksnyder/go-i18n/branch/master/graph/badge.svg)](https://codecov.io/gh/nicksnyder/go-i18n) [![Sourcegraph](https://sourcegraph.com/github.com/nicksnyder/go-i18n/-/badge.svg)](https://sourcegraph.com/github.com/nicksnyder/go-i18n?badge)
+# go-i18n ![Build status](https://github.com/spectrocloud/go-i18n/workflows/Build/badge.svg) [![Report card](https://goreportcard.com/badge/github.com/spectrocloud/go-i18n)](https://goreportcard.com/report/github.com/spectrocloud/go-i18n) [![codecov](https://codecov.io/gh/nicksnyder/go-i18n/branch/master/graph/badge.svg)](https://codecov.io/gh/nicksnyder/go-i18n) [![Sourcegraph](https://sourcegraph.com/github.com/spectrocloud/go-i18n/-/badge.svg)](https://sourcegraph.com/github.com/spectrocloud/go-i18n?badge)
 
 go-i18n is a Go [package](#package-i18n) and a [command](#command-goi18n) that helps you translate Go programs into multiple languages.
 
 - Supports [pluralized strings](http://cldr.unicode.org/index/cldr-spec/plural-rules) for all 200+ languages in the [Unicode Common Locale Data Repository (CLDR)](https://www.unicode.org/cldr/charts/28/supplemental/language_plural_rules.html).
-  - Code and tests are [automatically generated](https://github.com/nicksnyder/go-i18n/tree/main/v2/internal/plural/codegen) from [CLDR data](http://cldr.unicode.org/index/downloads).
+  - Code and tests are [automatically generated](https://github.com/spectrocloud/go-i18n/tree/main/v2/internal/plural/codegen) from [CLDR data](http://cldr.unicode.org/index/downloads).
 - Supports strings with named variables using [text/template](http://golang.org/pkg/text/template/) syntax.
 - Supports message files of any format (e.g. JSON, TOML, YAML).
 
@@ -16,12 +16,12 @@ go-i18n is a Go [package](#package-i18n) and a [command](#command-goi18n) that h
 </strong>
 
 ## Package i18n
-[![GoDoc](https://godoc.org/github.com/nicksnyder/go-i18n?status.svg)](https://godoc.org/github.com/nicksnyder/go-i18n/v2/i18n)
+[![GoDoc](https://godoc.org/github.com/spectrocloud/go-i18n?status.svg)](https://godoc.org/github.com/spectrocloud/go-i18n/v2/i18n)
 
 The i18n package provides support for looking up messages according to a set of locale preferences.
 
 ```go
-import "github.com/nicksnyder/go-i18n/v2/i18n"
+import "github.com/spectrocloud/go-i18n/v2/i18n"
 ```
 
 Create a Bundle to use for the lifetime of your application.
@@ -74,12 +74,12 @@ localizer.Localize(&i18n.LocalizeConfig{
 ```
 
 ## Command goi18n
-[![GoDoc](https://godoc.org/github.com/nicksnyder/go-i18n?status.svg)](https://godoc.org/github.com/nicksnyder/go-i18n/v2/goi18n)
+[![GoDoc](https://godoc.org/github.com/spectrocloud/go-i18n?status.svg)](https://godoc.org/github.com/spectrocloud/go-i18n/v2/goi18n)
 
 The goi18n command manages message files used by the i18n package.
 
 ```
-go get -u github.com/nicksnyder/go-i18n/v2/goi18n
+go get -u github.com/spectrocloud/go-i18n/v2/goi18n
 goi18n -help
 ```
 
@@ -134,9 +134,9 @@ If you have added new messages to your program:
 
 ## For more information and examples:
 
-- Read the [documentation](https://godoc.org/github.com/nicksnyder/go-i18n/v2).
-- Look at the [code examples](https://github.com/nicksnyder/go-i18n/blob/main/v2/i18n/example_test.go) and [tests](https://github.com/nicksnyder/go-i18n/blob/main/v2/i18n/localizer_test.go).
-- Look at an example [application](https://github.com/nicksnyder/go-i18n/tree/main/v2/example).
+- Read the [documentation](https://godoc.org/github.com/spectrocloud/go-i18n/v2).
+- Look at the [code examples](https://github.com/spectrocloud/go-i18n/blob/main/v2/i18n/example_test.go) and [tests](https://github.com/spectrocloud/go-i18n/blob/main/v2/i18n/localizer_test.go).
+- Look at an example [application](https://github.com/spectrocloud/go-i18n/tree/main/v2/example).
 
 ## License
 

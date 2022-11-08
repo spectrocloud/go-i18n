@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"sync"
 
-	"github.com/nicksnyder/go-i18n/v2/internal/plural"
+	"github.com/spectrocloud/go-i18n/v2/internal/plural"
 
 	"golang.org/x/text/language"
 )
@@ -124,6 +124,9 @@ func (b *Bundle) readTagMsgTemplate(tag language.Tag) *sync.Map {
 }
 
 func (b *Bundle) readMsgTemplate(tag language.Tag, key string) *MessageTemplate {
+	if b.messageTemplates == nil {
+		return nil
+	}
 	templates, ok := b.messageTemplates.Load(tag)
 	if templates == nil || !ok {
 		return nil
